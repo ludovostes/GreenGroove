@@ -1,9 +1,27 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.GreenGroove" parent="Theme.Material3.DayNight.NoActionBar">
+    <!-- Suppression de la bannière Android : "Theme.AppCompat.Light.NoActionBar" -->
+    <style name="Base.Theme.GreenGroove" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
     <style name="Theme.GreenGroove" parent="Base.Theme.GreenGroove" />
+
+    <!-- COMPOSANT TITRE PAR DÉFAUT -->
+    <style name="DefaultTextStyle">
+        <item name="android:textColor">@color/lightGrey</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/Kanit</item>
+    </style>
+
+    <!-- COMPOSANT SOUS-TITRE PAR DÉFAUT -->
+    <style name="SubtitleTextStyle" parent="DefaultTextStyle">
+        <item name="android:textColor">@color/darkGrey</item>
+    </style>
+
+    <!-- COMPOSANT GROS-TITRE PAR DÉFAUT -->
+    <style name="TitleTextStyle" parent="SubtitleTextStyle">
+        <item name="android:textSize">24sp</item>
+    </style>
 </resources>
